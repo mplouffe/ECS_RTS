@@ -42,6 +42,13 @@ namespace lvl_0.Utils
             textMesh.GetComponent<MeshRenderer>().sortingOrder = sortingOrder;
             return textMesh;
         }
+
+        public static Vector3 GetMouseWorldPosition()
+        {
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            worldPosition.z = 0f;
+            return worldPosition;
+        }
     }
 
 }
