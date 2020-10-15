@@ -16,10 +16,7 @@ namespace lvl_0
 
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                grid.SetValue(Utils.Utils.GetMouseWorldPosition(), 56);
-            }
+
         }
     }
 
